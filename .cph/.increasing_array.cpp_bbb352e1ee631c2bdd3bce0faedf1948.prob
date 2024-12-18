@@ -1,0 +1,1 @@
+{"name":"Local: increasing_array","url":"/home/sathvikpn/workspace/solve/increasing_array.cpp","tests":[{"id":1734513584977,"input":"5\n3 2 5 1 7","output":"5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/sathvikpn/workspace/solve/increasing_array.cpp","group":"local","local":true}
