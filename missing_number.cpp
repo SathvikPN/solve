@@ -13,4 +13,9 @@ int main() {
 
 void solution(){
     // code here
+    long long n, x; cin >> n;
+    long long target = (n*(n+1))/2;
+    long long current = 0;
+    while(--n) {cin >> x; current+=x;}
+    cout << target - current;
 }
