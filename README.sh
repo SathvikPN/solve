@@ -1,7 +1,7 @@
 #!/bin/bash
 
 gsync() {
-    git add . && git commit -m 'add to repo' && git push origin main
+    git add . -v && git commit -m 'add to repo' -v && git push origin main -v
 }
 
 nfile() {
