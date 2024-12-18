@@ -1,0 +1,1 @@
+{"name":"Local: coin_piles","url":"/home/sathvikpn/workspace/solve/coin_piles.cpp","tests":[{"id":1734530674832,"input":"3\n2 1\n2 2\n3 3","output":"YES\nNO\nYES"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/sathvikpn/workspace/solve/coin_piles.cpp","group":"local","local":true}
