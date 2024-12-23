@@ -13,8 +13,8 @@ int main() {
 
 void solution(){
     long long n, q, a, b; cin >> n >> q;
-    long long x, y, logn=log2(n);
-    long long prevRangeSize, currRangeSize;
+    long long x, y, logn=log2(n)+1;
+    long long prevRangeSize;
     long long sparseTable[logn][n];
 
 // RMQ(2,9)
@@ -36,9 +36,8 @@ void solution(){
     for(x=0; x<n; x++) cin >> sparseTable[0][x];
     // recursive case
     for(y=1; y<=logn; y++){
-        currRangeSize = 1 << y;
-        for(x=0; (x+currRangeSize-1) < n; x++){
-            prevRangeSize = 1 << (y-1);
+        prevRangeSize = 1 << (y-1);
+        for(x=0; (x+prevRangeSize) < n; x++){
             sparseTable[y][x] = min(sparseTable[y-1][x], sparseTable[y-1][x + prevRangeSize]);
         }
     }
