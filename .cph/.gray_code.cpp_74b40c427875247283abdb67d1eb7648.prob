@@ -1,0 +1,1 @@
+{"name":"Local: gray_code","url":"/home/sathvikpn/workspace/solve/gray_code.cpp","tests":[{"id":1735010580068,"input":"2","output":"00\n01\n11\n10"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/sathvikpn/workspace/solve/gray_code.cpp","group":"local","local":true}
