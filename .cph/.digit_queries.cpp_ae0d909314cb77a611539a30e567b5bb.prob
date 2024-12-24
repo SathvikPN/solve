@@ -1,0 +1,1 @@
+{"name":"Local: digit_queries","url":"/home/sathvikpn/workspace/solve/digit_queries.cpp","tests":[{"id":1735066851314,"input":"3\n7\n19\n12","output":"7\n4\n1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/sathvikpn/workspace/solve/digit_queries.cpp","group":"local","local":true}
