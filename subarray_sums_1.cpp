@@ -12,5 +12,14 @@ int main() {
 }
 
 void solution(){
-    // code here
+    int n,x; cin >> n >> x;
+    int count=0, csum=0, left=0;
+    int a[n];
+    for(int i=0; i<n; ++i){
+        cin >> a[i];
+        csum = csum + a[i];
+        while(left<=i && csum > x) csum = csum-a[left++];
+        if(csum==x) count++;
+    }
+    cout << count;
 }
