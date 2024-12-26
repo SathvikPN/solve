@@ -1,0 +1,1 @@
+{"name":"Local: sum_of_four_values","url":"/home/sathvikpn/workspace/solve/sum_of_four_values.cpp","tests":[{"id":1735190381265,"input":"8 15\n3 2 5 8 1 3 2 3","output":"5 1 6 4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/sathvikpn/workspace/solve/sum_of_four_values.cpp","group":"local","local":true}

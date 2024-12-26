@@ -1,0 +1,1 @@
+{"name":"Local: reading_books","url":"/home/sathvikpn/workspace/solve/reading_books.cpp","tests":[{"id":1735187827730,"input":"3\n2 8 3","output":"16"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/sathvikpn/workspace/solve/reading_books.cpp","group":"local","local":true}
