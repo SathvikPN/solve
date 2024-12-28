@@ -1,0 +1,1 @@
+{"name":"Local: stick_lengths","url":"/home/sathvikpn/workspace/solve/stick_lengths.cpp","tests":[{"id":1735368175847,"input":"5\n2 3 1 5 2","output":"5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/sathvikpn/workspace/solve/stick_lengths.cpp","group":"local","local":true}
