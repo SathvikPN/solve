@@ -28,20 +28,18 @@ void solution(){
     int a,b;
     while(m--){
         cin >> a >> b; // Indices of elements to swap
-        unordered_set<int> affected;
+        set<pair<int,int>> affectedPairs;
 
         // Collect the unique values being swapped and their neighbors
         for(int x:{values[a], values[b]}){
             // x=values[a], x=values[b]
-            affected.insert(x);
-            if(x>1) affected.insert(x-1); // prev number
-            if(x<n) affected.insert(x+1); // next number
+            if(x>1) affectedPairs.insert({x-1, x  }); // prev number
+            if(x<n) affectedPairs.insert({x  , x+1}); // next number
         }
 
         // Remove the contribution of affected elements before the swap
-        for(int x: affected){
-            if(pos[x]   < pos[x-1]) rounds--;
-            if(pos[x+1] < pos[x])   rounds--;
+        for(auto x: affectedPairs){
+            if(pos[x.first] > pos[x.second]) rounds--;
         }
 
 
@@ -51,11 +49,26 @@ void solution(){
         swap(values[a], values[b]);
 
         // Re-add contributions of affected elems after swap
-        for(int x: affected){
-            if(pos[x]   < pos[x-1]) rounds++;
-            if(pos[x+1] < pos[x])   rounds++;
+        for(auto x: affectedPairs){
+            if(pos[x.first] > pos[x.second]) rounds++;
         }
 
-        cout << rounds;
+        cout << rounds << "\n";
     }
 }
+
+// idx:         1 2 3 4 5
+// values:      4 2 1 5 3
+
+// idx:         1 2 3 4 5 
+// positions:   3 2 5 1 4
+
+// swap1 ------------------------
+
+// idx:         1 2 3 4 5
+// values:      4 1 2 5 3
+
+// idx:         1 2 3 4 5 
+// positions:   2 3 5 1 4  
+
+
