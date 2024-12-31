@@ -14,19 +14,22 @@ int main() {
 void solution(){
     int n; cin >> n;
     int k[n];
-    for(int i=0; i<n; ++i) cin >> k[i];
+    for(auto i=0; i<n; ++i) cin >> k[i];
  
-    int ans=0;
-    set<int> st;
-
-    int start=0;
+    int start=0, maxCount=0; // starting idx of window
+    set<int> currentSet; // learn: unordered_set TLE but set OK. 
+    // frequent erases ------------------------------------------
+    // set: balanced binary search tree, consistent O(logN) time complexity
+    // unordered_set: hashtable, rehash if necessary, O(1) but sometimes O(N) hash-collisions
+    
     for(int i=0; i<n; ++i){
-        while(st.count(k[i])){
-            st.erase(k[start]);
+        while(currentSet.count(k[i])){
+            currentSet.erase(k[start]);
             start++;
         }
-        st.insert(k[i]);
-        ans = max(ans, int(st.size()));
+        currentSet.insert(k[i]);
+        maxCount = max(maxCount, int(currentSet.size()));
     }
-    cout << ans;
+ 
+    cout << maxCount;
 }
