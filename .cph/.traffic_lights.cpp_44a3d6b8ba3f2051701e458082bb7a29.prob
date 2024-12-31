@@ -1,0 +1,1 @@
+{"name":"Local: traffic_lights","url":"/home/sathvikpn/workspace/solve/traffic_lights.cpp","tests":[{"id":1735632269541,"input":"8 3\n3 6 2","output":"5 3 3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/sathvikpn/workspace/solve/traffic_lights.cpp","group":"local","local":true}
