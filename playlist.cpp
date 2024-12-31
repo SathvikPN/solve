@@ -16,12 +16,12 @@ void solution(){
     int k[n];
     for(auto i=0; i<n; ++i) cin >> k[i];
  
-    int start=0, maxCount=0; // starting idx of window
     set<int> currentSet; // learn: unordered_set TLE but set OK. 
     // frequent erases ------------------------------------------
     // set: balanced binary search tree, consistent O(logN) time complexity
     // unordered_set: hashtable, rehash if necessary, O(1) but sometimes O(N) hash-collisions
-    
+
+    int start=0, maxCount=0; // starting idx of window
     for(int i=0; i<n; ++i){
         while(currentSet.count(k[i])){
             currentSet.erase(k[start]);
