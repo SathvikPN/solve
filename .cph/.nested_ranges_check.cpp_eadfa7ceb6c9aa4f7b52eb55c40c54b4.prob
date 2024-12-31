@@ -1,0 +1,1 @@
+{"name":"Local: nested_ranges_check","url":"/home/sathvikpn/workspace/solve/nested_ranges_check.cpp","tests":[{"id":1735641723255,"input":"4\n1 6\n2 4\n4 8\n3 6","output":"1 0 0 0\n0 1 0 1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/sathvikpn/workspace/solve/nested_ranges_check.cpp","group":"local","local":true}
