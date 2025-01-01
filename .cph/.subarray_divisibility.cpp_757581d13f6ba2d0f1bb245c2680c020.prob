@@ -1,0 +1,1 @@
+{"name":"Local: subarray_divisibility","url":"/home/dev/solve/subarray_divisibility.cpp","tests":[{"id":1735753837567,"input":"5\n3 1 2 7 4","output":"1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/dev/solve/subarray_divisibility.cpp","group":"local","local":true}
