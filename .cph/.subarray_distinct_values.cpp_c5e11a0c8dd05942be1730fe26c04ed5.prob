@@ -1,0 +1,1 @@
+{"name":"Local: subarray_distinct_values","url":"/home/dev/solve/subarray_distinct_values.cpp","tests":[{"id":1735841073165,"input":"5 2\n1 2 3 1 1","output":"10"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/dev/solve/subarray_distinct_values.cpp","group":"local","local":true}
