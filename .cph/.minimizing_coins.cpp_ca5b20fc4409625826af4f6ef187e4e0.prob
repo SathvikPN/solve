@@ -1,0 +1,1 @@
+{"name":"Local: minimizing_coins","url":"/home/dev/solve/minimizing_coins.cpp","tests":[{"id":1735927724575,"input":"3 11\n1 5 7","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/dev/solve/minimizing_coins.cpp","group":"local","local":true}
