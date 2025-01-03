@@ -1,7 +1,7 @@
 #!/bin/bash
 
 gsync() {
-    git add . -v && git commit -m 'add to repo' -v && git push origin asus-vivobook -v
+    git add . -v && git commit -m 'add to repo' -v && git push origin main -v
 }
 
 nfile() {
