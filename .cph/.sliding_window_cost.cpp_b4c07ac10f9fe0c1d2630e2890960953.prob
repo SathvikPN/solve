@@ -1,0 +1,1 @@
+{"name":"Local: sliding_window_cost","url":"/home/dev/solve/sliding_window_cost.cpp","tests":[{"id":1735910443346,"input":"8 3\n2 4 3 5 8 1 2 1","output":"2 2 5 7 7 1"},{"id":1735916748303,"input":"3 3 \n2 4 3","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/dev/solve/sliding_window_cost.cpp","group":"local","local":true}
