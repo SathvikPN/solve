@@ -1,0 +1,1 @@
+{"name":"Local: array_description","url":"/home/dev/solve/array_description.cpp","tests":[{"id":1735976838646,"input":"3 5\n2 0 2","output":"3"},{"id":1735978601946,"input":"4 5\n1 0 0 2","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/dev/solve/array_description.cpp","group":"local","local":true}
