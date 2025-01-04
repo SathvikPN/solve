@@ -1,0 +1,1 @@
+{"name":"Local: removing_digits","url":"/home/dev/solve/removing_digits.cpp","tests":[{"id":1735966576695,"input":"27","output":"5"},{"id":1735967649510,"input":"9","output":"1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/dev/solve/removing_digits.cpp","group":"local","local":true}
