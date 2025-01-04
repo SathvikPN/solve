@@ -32,11 +32,13 @@ void solution(){
     for(int h=2; h<=maxHeight; ++h){
         // 2 (horizontal on top, extend horizontal down) 
         // 1 (half-horizontal on top)
+        // base: [  ]
         dp[h][0] = (2 * dp[h-1][0] % MOD) + (1 * dp[h-1][1] % MOD);
         dp[h][0] %= MOD;
 
         // 1 (horizontal on top, cannot extend down) 
         // 4 (hh top, extendLeftColDown, extendRightColDown, extendBothColDown)
+        // base: [][]
         dp[h][1] = (1 * dp[h-1][0] % MOD) + (4 * dp[h-1][1] % MOD);
         dp[h][1] %= MOD;
     }
