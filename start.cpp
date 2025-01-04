@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
  
-const long long MOD = 1e9+7;
+const long long MOD = 1e9+7; // 10^9 + 7
  
 void solution();
 int main() {

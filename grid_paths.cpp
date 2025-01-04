@@ -1,9 +1,7 @@
-// TODO: Time Limit Exceeded
 #include<bits/stdc++.h>
 using namespace std;
  
-const long long MOD = 1e9+7;
-
+const long long MOD = 1e9+7; // 10^9 + 7
  
 void solution();
 int main() {
@@ -14,53 +12,27 @@ int main() {
 }
 
 void solution(){
-    const int N = 3;
-    string s; cin >> s;
+    int n; cin >> n;
+    string grid[n];
+    for(int i=0; i<n; ++i) cin >> grid[i];
 
-    const int MAX_STEP = (N*N)-1;
-    
-    // debug
-    if(s.size()!=MAX_STEP) {cout << "INVALID case"; exit(1);} 
-    // optimisation notes:
-    // 1. symmetric by middle horizontal line  
-    // 2. destination cell before visiting all cells, not valid path, exit
-    // 3. hit wall and has option to go either left or right, cannot visit all cell, exit
-    // 4. hit tail and has option to go either left or right, cannot visit all cell, exit
+    vector<vector<int>> dp(n, vector<int>(n,0));
 
-    long long paths=0, step=0;
-    auto inbound = [&](int y, int x) {
-        return (y>=0 && y<N && x>=0 && x<N) ? 1:0;
-    };
+    // base-case: valid pathway to reach first co-ordinate
+    if(grid[0][0] != '*') dp[0][0] = 1;
 
-    bool visited[N][N] = {{}};
-    char d[4] = {'U', 'D', 'L', 'R'};
-    int dx[4] = { 0,   0,   -1,  1};
-    int dy[4] = {-1,  1,    0,  0};
-
-
-    function<void(int,int)> dfs = [&](int y, int x){
-        if(y==(N-1) && x==0){
-            if(step==(N*N)-1) paths++;
-            return;
+    for(int y=0; y<n; ++y){
+        for(int x=0; x<n; ++x){
+            // default zero valid path for trap.
+            if(grid[y][x] == '*') continue; 
+            // from left
+            if(x-1>=0) dp[y][x] += dp[y][x-1];
+            // from top
+            if(y-1>=0) dp[y][x] += dp[y-1][x];
+            // save modulo 
+            dp[y][x] %= MOD;
         }
+    }
 
-        visited[y][x] = true;
-        for(int i=0; i<4; i++){
-            if(s[step]=='?' || s[step]==d[i]){
-                int ny = y + dy[i];
-                int nx = x + dx[i];
-
-                if(!inbound(ny,nx)) continue;
-                if(visited[ny][nx]) continue;
-
-                step++;
-                dfs(ny, nx);
-                step--;
-            }
-        }
-        visited[y][x] = false;
-    };
-
-    dfs(0,0); // only enter valid unvisited cell
-    cout << paths;
+    cout << dp[n-1][n-1];
 }
