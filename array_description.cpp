@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+// #define DEBUG
 using namespace std;
  
 const long long MOD = 1e9+7; // 10^9 + 7
@@ -46,5 +47,17 @@ void solution(){
         count = count + dp[n][v];
     }
     cout << count % MOD;
+
+    #ifdef DEBUG 
+    cout << "\n------------------------------------------------------\n";
+    cout << "n\\m \n";
+    for(int v=1; v<=m; ++v) dp[0][v] = v;
+    for(int i=1; i<=n; ++i) dp[i][0] = i;
+    for(auto r:dp){
+        for(auto c:r) cout << c << " ";
+        cout << "\n";
+    }
+    cout << "\n------------------------------------------------------\n";
+    #endif 
 
 }
