@@ -1,0 +1,1 @@
+{"name":"Local: edit_distance","url":"/home/dev/solve/edit_distance.cpp","tests":[{"id":1735992303002,"input":"LOVE\nMOVIE","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/dev/solve/edit_distance.cpp","group":"local","local":true}
