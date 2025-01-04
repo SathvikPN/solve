@@ -1,0 +1,1 @@
+{"name":"Local: rectangle_cutting","url":"/home/dev/solve/rectangle_cutting.cpp","tests":[{"id":1736003321323,"input":"3 5","output":"3"},{"id":1736007342976,"input":"2 3","output":"2\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/dev/solve/rectangle_cutting.cpp","group":"local","local":true}
