@@ -8,3 +8,5 @@ nfile() {
     cp start.cpp "$1"  # code template: start.cpp
     code -r "$1" # open the file in current vscode window
 }
+
+# https://mdotsabouri.blogspot.com/2014/10/my-recipe-to-improve-your-programming.html
