@@ -1,0 +1,1 @@
+{"name":"Local: exponentiation","url":"/home/dev/solve/exponentiation.cpp","tests":[{"id":1736103079194,"input":"3\n3 4\n2 8\n123 123","output":"81\n256\n921450052"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/dev/solve/exponentiation.cpp","group":"local","local":true}

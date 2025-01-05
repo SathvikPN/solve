@@ -1,0 +1,1 @@
+{"name":"Local: counting_bits","url":"/home/dev/solve/counting_bits.cpp","tests":[{"id":1736109760120,"input":"7","output":"12"},{"id":1736109983732,"input":"303021765044187\n","output":"7250167017244884\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/dev/solve/counting_bits.cpp","group":"local","local":true}
