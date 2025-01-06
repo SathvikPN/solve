@@ -1,0 +1,16 @@
+Backup and Recovery Microservice (Atlantia K8s Inventory Manager), Virtualization Aggregator Microservice(VA), Common Virtualization Provider Microservice(CVP), High Voltage Project (alt to Morpheus), Disk Encryption Project.
+
+transitioned as early member(3rd, 2nd IC) to team lynx.
+- designed and developed REST and gRPC APIs, documentations and demos. contributed in design proposals and implementations.
+- investigated, benchmarked and optimised postgres DB queries(7) across sandbox and prod clusters with reports and demo meetings. involved goroutine threads.
+- handled integration of services with audit, Jenkins pipelines, briefly worked on AWS Elastic K8s service.
+- lead investigations for HV project integration (alt to Morpheus offerings), VM migrations (VMWare to HPE offerings) with working prototype and demo. 
+- worked on disk-encryption project. leveraged open source tools for HPE custom OS image. delivered prototype with reports and documentations. received approval for productization.
+- built internal tools for our team delivery velocity: kafka-event-generator, mock authz server, kickstart scripts for factory (got accepted for standard workflow)
+- mentoring two junior engineers, goto resource in team for escalations, handled tens of them in triaging and RCA across teams.
+
+regular work involved Go, REST, gRPC, kafka, terraform, helm charts, linux environments and shell scripting, postgres, docker, K8s, deployments on sandbox clusters, cross-team meetings, documentation pages and demo.
+
+
+- developed contracts, unit-tests, observation-pages and bug-fixes.
+- pitched and built datamatic internal tool (data generation and testcase automation). Received approval across teams for streamlined usecase and easier onboarding over existing avalanche tool. Published package with detailed documentation and demo.
