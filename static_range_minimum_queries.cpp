@@ -26,6 +26,17 @@ int main() {
 //   2^1:     3   1   3   
 //   2^2:     1       3
 
+/* learn: 
+    static-RangeSumQuery(prefixSumArray) 
+    static-RangeMinQuery(sparseTable)
+sparseTable -------------------------------------------------------------------
+idx:   (n=9)
+  1:    0       1      2       3       4       5       6        7       8 
+  2:   [0,1]   [1,2]  [2,3]   [3,4]   [4,5]   [5,6]   [6,7]    [7,8]   null 
+  4:   [0,3]   [1,4]  [2,5]   [3,6]   [4,7]   [5,8]   null     null    null 
+  8:   [0,7]   [1,8]
+*/
+
 void solution(){
     long long n, q, a, b; cin >> n >> q;
     long long x, y, logn=log2(n)+1;
