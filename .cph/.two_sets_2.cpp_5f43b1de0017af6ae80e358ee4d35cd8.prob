@@ -1,0 +1,1 @@
+{"name":"Local: two_sets_2","url":"/home/dev/solve/two_sets_2.cpp","tests":[{"id":1736231052549,"input":"7","output":"4"},{"id":1736231472658,"input":"112","output":"979144036\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/dev/solve/two_sets_2.cpp","group":"local","local":true}
