@@ -2,7 +2,7 @@
 
 gsync() {
     rm -rf ./.cph
-    git add . -v && 
+    git add . && 
     git commit -m 'add to repo' && 
     git push origin main
 }
