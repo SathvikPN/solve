@@ -6,7 +6,11 @@ gsync() {
     git push origin main -v
 }
 
+open() {
+    code -r "$1"
+}
+
 nfile() {
     cp starter.cpp "$1" 
-    code -r "$1" 
+    open "$1" 
 }
