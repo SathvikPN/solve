@@ -13,10 +13,10 @@ int main() {
 }
 
 void solution(){
-    // graph coloring: 2 colors
-    int n,m; cin >> n >> m; // nodes, edges
+    // graph coloring: colors={1,2}
+    int n,m; cin >> n >> m;
     vector<vector<int>> adj(n+1);
-    vector<int> color(n+1, 0); // 1 || 2
+    vector<int> color(n+1, 0); 
     while(m--){
         int a,b; cin >> a >> b;
         adj[a].push_back(b);

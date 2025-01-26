@@ -1,6 +1,8 @@
 random note dumps
 
 ---
+wsl directories from windows explorer:
+    \\wsl.localhost\Debian\home\dev\solve\cses
 
 helper snippets:
 ```cpp
