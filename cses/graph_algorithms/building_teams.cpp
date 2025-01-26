@@ -2,17 +2,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void printAdj(vector<vector<int>>& adj){
-    for (int node=1; node<adj.size(); ++node){
-        cout << node << "->";
-        for(auto next:adj[node]) cout << next << ",";
-        cout << "\n";
-    }
-}
-
-void printv(vector<int>& v){
-    for(int i=1; i<v.size(); ++i) printf("v[%d]=%d\n", i, v[i]);
-}
 
 const long long MOD = 1e9+7;
 void solution();
@@ -24,7 +13,7 @@ int main() {
 }
 
 void solution(){
-    // graph coloring 
+    // graph coloring: 2 colors
     int n,m; cin >> n >> m; // nodes, edges
     vector<vector<int>> adj(n+1);
     vector<int> color(n+1, 0); // 1 || 2
