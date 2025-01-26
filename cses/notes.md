@@ -6,6 +6,19 @@ helper snippets:
 ```cpp
 void print2D(int r,int c,vector<vector<char>>a){for(int y=0;y<r;++y){for(int x=0;x<c;++x){cout<<a[y][x]<<" ";}cout<<"\n";}}
 
+void printAdj(vector<vector<int>>& adj){
+    for (int node=1; node<adj.size(); ++node){
+        cout << node << "->";
+        for(auto next:adj[node]) cout << next << ",";
+        cout << "\n";
+    }
+}
+
+void printv(vector<int>& v){
+    for(int i=1; i<v.size(); ++i) printf("v[%d]=%d\n", i, v[i]);
+}
+
+
 // offsets{U,D, L,R}: directions
 int dx[4]={0,0,-1,1}; 
 int dy[4]={-1,1,0,0};
